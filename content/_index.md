@@ -35,9 +35,9 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I am an engineer and researcher that is the Director of AI Medicine and Engineering and Adjunct Research Fellow with University of New South Wales and University of Wollongong.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        I work on the intersection of artificial intelligence, medicine, and engineering. My research focuses on developing AI systems that can improve healthcare outcomes and enhance engineering processes. 
         
         Please reach out to collaborate 😃
     design:
