@@ -13,17 +13,23 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
 
-      - name: List files for debugging
+      - name: Debug file list
         run: ls -R
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+      - name: Install hugo-blox-import
+        run: pip install hugo-blox-import
 
-      - name: Install academic CLI
-        run: pip install academic
+      - name: Show BibTeX file content
+        run: cat publications.bib
 
       - name: Import publications from BibTeX
-        run: academic import publications.bib content/publication/
+        run: hugo-blox-import publications.bib content/publication/
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add content/publication/
+          git commit -m "Add publications via hugo-blox-import" || echo "No changes to commit"
+          git push
 
