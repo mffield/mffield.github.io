@@ -37,6 +37,8 @@ header:
     logo:
       text: "Matthew Field"
 
+favicon: "media/icon.jpg"
+
 # Site footer
 footer:
   copyright:
@@ -59,4 +61,3 @@ features:
   privacy_pack:
     enable: false
 
-favicon: "media/icons/icon.jpg"
