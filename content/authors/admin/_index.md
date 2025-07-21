@@ -43,7 +43,7 @@ profiles:
     url: https://scholar.google.com.au/citations?user=5_4YHtoAAAAJ&hl=en
   - icon: academicons/orcid
     url: https://orcid.org/0000-0002-6169-6721
-  - icon: brands/researchgate
+  - icon: academicons/researchgate
     url: https://www.researchgate.net/profile/Matthew-Field-2
 
 interests:
