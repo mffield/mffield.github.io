@@ -8,7 +8,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: List files for debugging
+        run: ls -R
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -20,3 +26,4 @@ jobs:
 
       - name: Import publications from BibTeX
         run: academic import publications.bib content/publication/
+
