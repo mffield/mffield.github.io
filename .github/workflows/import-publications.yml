@@ -19,4 +19,4 @@ jobs:
         run: pip install academic
 
       - name: Import publications from BibTeX
-        run: academic import --bibtex publications.bib
+        run: academic import publications.bib content/publication/
