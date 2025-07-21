@@ -37,7 +37,7 @@ header:
     logo:
       text: "Matthew Field"
 
-favicon: "media/icon.jpg"
+favicon: "assets/media/icon.jpg"
 
 # Site footer
 footer:
