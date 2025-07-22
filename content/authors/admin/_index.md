@@ -74,9 +74,9 @@ work:
   - position: Director
     company_name: AI Medicine and Engineering
     company_url: 'https://aimedeng.com/'
-    company_logo: ''
+    company_logo: 'assets/media/aimedeng-icon.png'
     date_start: 2023-07-01
-    date_end: present
+    date_end: null
     summary: |2-
         - Consultancy software as a service focusing on automation.
         - Research for cancer prediction models, medical imaging.
