@@ -1,0 +1,30 @@
+{{/* HugoBlox custom resume experience section with logo support */}}
+
+<section id="experience" class="section">
+  <div class="container">
+    {{ with .Title }}<h1 class="mb-4">{{ . }}</h1>{{ end }}
+    {{ range (index site.Data.authors (.content.username | default "admin")).work }}
+      <div class="card experience">
+        <div class="card-body d-flex">
+          {{ with .company_logo }}
+            <img src="{{ . | relURL }}" alt="{{ $.company_name }}" class="company-logo mr-3" style="max-height: 48px;">
+          {{ end }}
+          <div>
+            <h5 class="card-title">{{ .position }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              {{ if .company_url }}
+                <a href="{{ .company_url }}" target="_blank">{{ .company }}</a>
+              {{ else }}
+                {{ .company }}
+              {{ end }}
+            </h6>
+            <div class="text-muted">
+              {{ .location }} | {{ (.date_start | time.Format "Jan 2006") }} – {{ if .date_end }}{{ (.date_end | time.Format "Jan 2006") }}{{ else }}Present{{ end }}
+            </div>
+            <p class="card-text">{{ .description | markdownify }}</p>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section>
