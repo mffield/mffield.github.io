@@ -74,7 +74,7 @@ work:
   - position: Director
     company_name: AI Medicine and Engineering
     company_url: 'https://aimedeng.com/'
-    company_logo: 'static/media/aimedeng.png'
+    company_logo: '/media/aimedeng.png'
     date_start: 2023-07-01
     date_end: null
     summary: |2-
@@ -84,7 +84,7 @@ work:
         - Developing automation solutions for engineering workflows.
   - position: Postdoctoral Research Fellow
     company_name: University of New South Wales
-    company_logo: 'static/media/unsw.png'
+    company_logo: '/media/unsw.png'
     company_url: https://www.unsw.edu.au
     date_start: 2017-02-01
     date_end: 2023-06-30
@@ -95,7 +95,7 @@ work:
 
   - position: Postdoctoral Research Fellow
     company_name: University of Wollongong
-    company_logo: 'static/media/uow.png'
+    company_logo: '/media/uow.png'
     company_url: https://www.uow.edu.au
     date_start: 2016-01-01
     date_end: 2017-02-01
@@ -106,7 +106,7 @@ work:
 
   - position: Postdoctoral Research Fellow
     company_name: University of Sydney
-    company_logo: 'static/media/usyd.png'
+    company_logo: '/media/usyd.png'
     company_url: https://www.sydney.edu.au
     date_start: 2014-09-01
     date_end: 2016-01-01
