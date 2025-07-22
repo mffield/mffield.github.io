@@ -78,8 +78,10 @@ work:
     date_start: 2023-07-01
     date_end: present
     summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - Consultancy software as a service focusing on automation.
+        - Research for cancer prediction models, medical imaging.
+        - Developing software for medical imaging analysis.
+        - Developing automation solutions for engineering workflows.
   - position: Postdoctoral Research Fellow
     company_name: University of New South Wales
     company_logo: 'assets/media/unsw-icon.png'
