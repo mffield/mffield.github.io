@@ -73,42 +73,44 @@ education:
 work:
   - position: Director
     company_name: AI Medicine and Engineering
-    company_url: ''
+    company_url: 'https://aimedeng.com/'
     company_logo: ''
-    date_start: 2023-06-01
-    date_end: ''
+    date_start: 2023-07-01
+    date_end: present
     summary: |2-
       Responsibilities include:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
   - position: Postdoctoral Research Fellow
     company_name: University of New South Wales
+    company_logo: 'assets/media/unsw-icon.png'
     company_url: https://www.unsw.edu.au
     date_start: 2017-02-01
     date_end: 2023-06-30
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - Developing federated learning systems for cancer prediction - AusCAT and ACDN.
+        - Collaborative research with medical physics, oncologists and researchers.
+        - Supervising research students.
 
   - position: Postdoctoral Research Fellow
     company_name: University of Wollongong
+    company_logo: 'assets/media/uow-icon.png'
     company_url: https://www.uow.edu.au
     date_start: 2016-01-01
     date_end: 2017-02-01
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - Developing federated learning systems for cancer prediction - AusCAT and ACDN.
+        - Collaborative research with medical physics, oncologists and researchers.
+        - Supervising research students.
 
   - position: Postdoctoral Research Fellow
     company_name: University of Sydney
+    company_logo: 'assets/media/usyd-icon.png'
     company_url: https://www.sydney.edu.au
     date_start: 2014-09-01
     date_end: 2016-01-01
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - Developing federated learning systems for cancer prediction - AusCAT.
+        - Collaborative research with medical physics, oncologists and researchers.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
