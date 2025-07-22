@@ -1,9 +1,9 @@
 ---
 # Display name
-title: Dr
+title: Matthew Field
 
 # Name pronunciation (optional)
-name_pronunciation: Matthew Field
+name_pronunciation: 
 
 # Full name (for SEO)
 first_name: Matthew
