@@ -63,6 +63,12 @@ sections:
         exclude_featured: false
     design:
       view: citation
+  - block: resume-experience
+    content:
+      username: admin
+    design:
+      date_format: 'January 2006'
+      is_education_first: false
   - block: collection
     id: talks
     content:
