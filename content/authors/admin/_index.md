@@ -145,8 +145,8 @@ awards:
     summary: |
       Awarded for research on federated learning and radiomics for cancer prediction models.
   - title: Travel Grant
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
+    url: https://www.nsw.gov.au/grants-and-funding/cancer-institute-nsw-travel-grants
+    date: '2022-07-01'
     awarder: Cancer Institute NSW
     summary: |
       Awarded to support research on cancer prediction models.
