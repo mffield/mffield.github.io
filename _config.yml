@@ -40,6 +40,7 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0002-6169-6721"
   semantic         : # URL
+  github           : "mffield"
   ssrn             : # URL
   pubmed           : # URL
   researchgate     : "https://www.researchgate.net/profile/Matthew-Field-6"
@@ -51,7 +52,6 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "mffield"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
