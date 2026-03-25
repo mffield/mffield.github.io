@@ -1,6 +1,14 @@
 {% include base_path %}
 
-{% if post.header.teaser %}
+{% assign teaser = nil %}
+{% assign teaser_alt = post.title %}
+{% assign teaser_caption = nil %}
+
+{% if post.collection == 'publications' and post.graphical_abstract %}
+  {% assign teaser = post.graphical_abstract %}
+  {% assign teaser_alt = post.graphical_abstract_alt | default: post.title %}
+  {% assign teaser_caption = post.graphical_abstract_caption %}
+{% elsif post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
   {% assign teaser = site.teaser %}
@@ -12,17 +20,33 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% assign show_teaser = false %}
+{% if include.type == "grid" and teaser %}
+  {% assign show_teaser = true %}
+{% elsif post.collection == 'publications' and post.graphical_abstract %}
+  {% assign show_teaser = true %}
+{% elsif post.collection == 'publications' and post.header.teaser %}
+  {% assign show_teaser = true %}
+{% endif %}
+
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
+  <article class="archive__item{% if post.collection == 'publications' %} archive__item--publication{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if show_teaser %}
+      <div class="archive__item-teaser{% if post.collection == 'publications' %} archive__item-teaser--publication{% endif %}">
         <img src=
           {% if teaser contains "://" %}
             "{{ teaser }}"
+          {% elsif teaser contains "/" %}
+            "{{ teaser | prepend: base_path }}"
           {% else %}
             "{{ teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
-          alt="">
+          alt="{{ teaser_alt | escape }}"
+          loading="lazy"
+          decoding="async">
+        {% if teaser_caption %}
+          <p class="archive__item-teaser-caption">{{ teaser_caption }}</p>
+        {% endif %}
       </div>
     {% endif %}
 
@@ -33,7 +57,7 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    
+
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
@@ -51,7 +75,7 @@
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
-    
+
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl %}

@@ -41,3 +41,21 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+.archive__item--publication .archive__item-teaser--publication {
+  margin-bottom: 0.75rem;
+}
+
+.archive__item--publication .archive__item-teaser--publication img {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.archive__item--publication .archive__item-teaser-caption {
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
