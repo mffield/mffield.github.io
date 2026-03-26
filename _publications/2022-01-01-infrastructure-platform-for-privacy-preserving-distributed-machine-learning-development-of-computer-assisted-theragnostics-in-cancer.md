@@ -9,6 +9,8 @@ venue: 'Journal of Biomedical Informatics'
 paperurl: 'https://doi.org/10.1016/j.jbi.2022.104181'
 bibtexurl: '/files/bib/infrastructure-platform-for-privacy-preserving-distributed-machine-learning-development-of-computer-assisted-theragnostics-in-cancer.bib'
 citation: 'Matthew Field, David I. Thwaites, Martin Carolan, Geoff P. Delaney, Joerg Lehmann, Jonathan Sykes, Shalini Vinod, Lois Holloway (2022). &quot;Infrastructure platform for privacy-preserving distributed machine learning development of computer-assisted theragnostics in cancer.&quot; <i>Journal of Biomedical Informatics</i>. 134, 104181.'
+graphical_abstract: /images/publications/cardiac_event_federated_learning_optimized_960.png
+graphical_abstract_alt: "Conceptual overview of the proposed distributed machine learning infrastructure for computer-assisted cancer theragnostics, showing secure multi-site data harmonization, privacy-preserving collaborative training, and development of predictive models for treatment-related clinical events."
 ---
 
 **Authors:** Matthew Field, David I. Thwaites, Martin Carolan, Geoff P. Delaney, Joerg Lehmann, Jonathan Sykes, Shalini Vinod, Lois Holloway
