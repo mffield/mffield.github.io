@@ -9,6 +9,8 @@ venue: 'Journal of Medical Imaging and Radiation Oncology'
 paperurl: 'https://doi.org/10.1111/1754-9485.13287'
 bibtexurl: '/files/bib/implementation-of-the-australian-computer-assisted-theragnostics-auscat-network-for-radiation-oncology-data-extraction-reporting-and-distributed-learning.bib'
 citation: 'Matthew Field, Shalini Vinod, Noel Aherne, Martin Carolan, Andre Dekker, Geoff Delaney, Stuart Greenham, Eric Hau, Joerg Lehmann, Joanna Ludbrook, Andrew Miller, Angela Rezo, Jothybasu Selvaraj, Jonathan Sykes, Lois Holloway, David Thwaites (2021). &quot;Implementation of the Australian Computer-Assisted Theragnostics (AusCAT) network for radiation oncology data extraction, reporting and distributed learning.&quot; <i>Journal of Medical Imaging and Radiation Oncology</i>. 65(5), 627-636.'
+graphical_abstract: /images/publications/auscat_graphical_abstract_960.webp
+graphical_abstract_alt: "Overview of the implementation of the Australian Computer-Assisted Theragnostics (AusCAT) network for secure, harmonized data extraction, standardization, analysis and federated learning in radiation oncology to support multi-institutional precision oncology research while preserving data privacy."
 ---
 
 **Authors:** Matthew Field, Shalini Vinod, Noel Aherne, Martin Carolan, Andre Dekker, Geoff Delaney, Stuart Greenham, Eric Hau, Joerg Lehmann, Joanna Ludbrook, Andrew Miller, Angela Rezo, Jothybasu Selvaraj, Jonathan Sykes, Lois Holloway, David Thwaites
