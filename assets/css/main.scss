@@ -90,3 +90,67 @@
 .archive__item--publication .archive__item-reference-block > :last-child {
   margin-bottom: 0;
 }
+
+.archive__item--publication .archive__item-graphical-abstract {
+  display: block;
+  margin: 0 0 0.85rem;
+}
+
+.archive__item--publication .archive__item-graphical-abstract-label,
+.archive__item--publication .archive__item-teaser-caption {
+  display: block;
+  width: 100%;
+}
+
+.archive__item--publication .archive__item-graphical-abstract img {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.page__graphical-abstract-card {
+  display: block;
+  margin: 1rem 0 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(127, 127, 127, 0.28);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.page__graphical-abstract-label {
+  display: block;
+  width: 100%;
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.page__graphical-abstract-card img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.page__graphical-abstract-caption {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.page__graphical-abstract-divider {
+  height: 1px;
+  margin: 0 0 1rem;
+  background: rgba(127, 127, 127, 0.25);
+}

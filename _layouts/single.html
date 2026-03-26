@@ -45,7 +45,42 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-        {{ content }}
+        {% assign page_teaser = nil %}
+{% assign page_teaser_alt = page.title %}
+{% assign page_teaser_caption = nil %}
+
+{% if page.collection == 'publications' and page.graphical_abstract %}
+  {% assign page_teaser = page.graphical_abstract %}
+  {% assign page_teaser_alt = page.graphical_abstract_alt | default: page.title %}
+  {% assign page_teaser_caption = page.graphical_abstract_caption %}
+{% endif %}
+
+{% if page_teaser %}
+  {% assign page_teaser_src = nil %}
+  {% if page_teaser contains '://' %}
+    {% assign page_teaser_src = page_teaser %}
+  {% elsif page_teaser contains '/' %}
+    {% assign page_teaser_src = page_teaser | prepend: base_path %}
+  {% else %}
+    {% assign page_teaser_src = page_teaser | prepend: "/images/" | prepend: base_path %}
+  {% endif %}
+
+  <figure class="page__graphical-abstract-card">
+    <p class="page__graphical-abstract-label">Graphical abstract</p>
+    <img
+      src="{{ page_teaser_src }}"
+      alt="{{ page_teaser_alt | escape }}"
+      loading="lazy"
+      decoding="async">
+    {% if page_teaser_caption %}
+      <figcaption class="page__graphical-abstract-caption">{{ page_teaser_caption }}</figcaption>
+    {% endif %}
+  </figure>
+
+  <div class="page__graphical-abstract-divider" aria-hidden="true"></div>
+{% endif %}
+
+{{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
