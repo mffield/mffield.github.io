@@ -5,57 +5,88 @@
  * This file controls what is imported from /_sass
  *
  * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
-    "vendor/breakpoint/breakpoint",
+  "vendor/breakpoint/breakpoint",
 
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+  "themes",
+  "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+  "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
-    "include/mixins",
-    "vendor/susy/susy",
+  "include/mixins",
+  "vendor/susy/susy",
 
-    "layout/reset",
-    "layout/base",
+  "layout/reset",
+  "layout/base",
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
+  "include/utilities",
+  "layout/tables",
+  "layout/buttons",
+  "layout/notices",
+  "layout/masthead",
+  "layout/navigation",
+  "layout/footer",
+  "syntax",
 
-    "layout/forms",
+  "layout/forms",
 
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
+  "layout/page",
+  "layout/archive",
+  "layout/sidebar",
+  "layout/json_cv",
 
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
+  "vendor/font-awesome/fontawesome",
+  "vendor/font-awesome/solid",
+  "vendor/font-awesome/brands"
 ;
 
-.archive__item--publication .archive__item-teaser--publication {
-  margin-bottom: 0.75rem;
+.archive__item--publication {
+  padding: 1rem 1.25rem 1.1rem;
+  margin: 0 0 1.25rem;
+  border: 1px solid rgba(127, 127, 127, 0.28);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
 
-.archive__item--publication .archive__item-teaser--publication img {
+.archive__item--publication .archive__item-title {
+  margin-bottom: 0.65rem;
+}
+
+.archive__item--publication .archive__item-graphical-abstract {
+  margin: 0 0 0.85rem;
+}
+
+.archive__item--publication .archive__item-graphical-abstract-label {
+  margin: 0 0 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.archive__item--publication .archive__item-graphical-abstract img {
+  display: block;
   width: 100%;
-  max-width: 320px;
+  max-width: 360px;
   aspect-ratio: 16 / 9;
   object-fit: contain;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .archive__item--publication .archive__item-teaser-caption {
-  margin-top: 0.35rem;
+  margin-top: 0.4rem;
   font-size: 0.85rem;
   line-height: 1.3;
+}
+
+.archive__item--publication .archive__item-reference-divider {
+  height: 1px;
+  margin: 0 0 0.95rem;
+  background: rgba(127, 127, 127, 0.25);
+}
+
+.archive__item--publication .archive__item-reference-block > :last-child {
+  margin-bottom: 0;
 }
