@@ -9,6 +9,8 @@ venue: 'Computerized Medical Imaging and Graphics'
 paperurl: 'https://doi.org/10.1016/j.compmedimag.2024.102403'
 bibtexurl: '/files/bib/uncertainty-estimation-using-a-3d-probabilistic-u-net-for-segmentation-with-small-radiotherapy-clinical-trial-datasets.bib'
 citation: 'Phillip Chlap, Hang Min, Jason Dowling, Matthew Field, Kirrily Cloak, Trevor Leong, Mark Lee, Julie Chu, Jennifer Tan, Phillip Tran, Tomas Kron, Mark Sidhom, Kirsty Wiltshire, Sarah Keats, Andrew Kneebone, Annette Haworth, Martin A. Ebert, Shalini K. Vinod, Lois Holloway (2024). &quot;Uncertainty estimation using a 3D probabilistic U-Net for segmentation with small radiotherapy clinical trial datasets.&quot; <i>Computerized Medical Imaging and Graphics</i>. 116, 102403.'
+graphical_abstract: /images/publications/probunet_graphical_abstract_1280_hq.webp
+graphical_abstract_alt: "Uncertainty estimation using a 3D probabilistic U-Net for segmentation with small radiotherapy clinical trial datasets."
 ---
 
 **Authors:** Phillip Chlap, Hang Min, Jason Dowling, Matthew Field, Kirrily Cloak, Trevor Leong, Mark Lee, Julie Chu, Jennifer Tan, Phillip Tran, Tomas Kron, Mark Sidhom, Kirsty Wiltshire, Sarah Keats, Andrew Kneebone, Annette Haworth, Martin A. Ebert, Shalini K. Vinod, Lois Holloway
