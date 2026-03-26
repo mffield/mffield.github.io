@@ -9,7 +9,7 @@ venue: 'Engineering Applications of Artificial Intelligence'
 paperurl: 'https://doi.org/10.1016/j.engappai.2024.109276'
 bibtexurl: '/files/bib/a-neural-network-based-vertical-federated-learning-framework-with-server-integration.bib'
 citation: 'Amir Anees, Matthew Field, Lois Holloway (2024). &quot;A neural network-based vertical federated learning framework with server integration.&quot; <i>Engineering Applications of Artificial Intelligence</i>. 138, 109276.'
-graphical_abstract: /images/publications/vfl_nsclc_infographic_optimized_960.png
+graphical_abstract: /images/publications/vfl_nsclc_infographic_optimized_960.webp
 graphical_abstract_alt: "Vertical federated learning with server integration enables privacy-preserving collaborative neural-network training across split datasets while maintaining centralized-level performance."
 ---
 
