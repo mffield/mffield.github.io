@@ -9,7 +9,7 @@ venue: 'Physics and Imaging in Radiation Oncology'
 paperurl: 'https://doi.org/10.1016/j.phro.2021.05.007'
 bibtexurl: '/files/bib/machine-learning-applications-in-radiation-oncology.bib'
 citation: 'Matthew Field, Nicholas Hardcastle, Michael Jameson, Noel Aherne, Lois Holloway (2021). &quot;Machine learning applications in radiation oncology.&quot; <i>Physics and Imaging in Radiation Oncology</i>. 19, 13-24.'
-graphical_abstract: /images/publications/ml_radiation_oncology_graphical_abstract_teaser.webp
+graphical_abstract: /images/publications/ml_radonc_graphical_abstract_optimized_960.webp
 graphical_abstract_alt: "Graphical abstract summarizing machine learning applications in radiation oncology across decision support, segmentation, treatment planning, and image-guided treatment, supported by clinical, imaging, dose, and outcome data."
 ---
 
