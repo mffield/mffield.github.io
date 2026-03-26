@@ -1,4 +1,4 @@
-# Contribution bundle for [`mffield/mffield.github.io`](https://mffield/mffield.github.io)
+# Contribution bundle for [`mffield/mffield.github.io`](https://mffield.github.io)
 
 This folder contains a proposed content migration from the archived Hugo site into the current Academic Pages / Jekyll site.
 
