@@ -9,7 +9,7 @@ venue: 'Radiotherapy and Oncology'
 paperurl: 'https://doi.org/10.1016/j.radonc.2022.09.023'
 bibtexurl: '/files/bib/larynx-cancer-survival-model-developed-through-open-source-federated-learning.bib'
 citation: 'Christian Rønn Hansen, Gareth Price, Matthew Field, Nis Sarup, Ruta Zukauskaite, Jørgen Johansen, Jesper Grau Eriksen, Farhannah Aly, Andrew McPartlin, Lois Holloway, David Thwaites, Carsten Brink (2022). &quot;Larynx cancer survival model developed through open-source federated learning.&quot; <i>Radiotherapy and Oncology</i>. 176, 179-186.'
-graphical_abstract: /images/publications/larynx_federated_learning_graphical_abstract_960.webp
+graphical_abstract: /images/publications/auscat_graphical_abstract_final_1280.webp
 graphical_abstract_alt: "Overview of a federated learning approach used for collaborative development of a larynx cancer survival prediction model using harmonized data from international hospitals while preserving privacy."
 ---
 
